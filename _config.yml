@@ -1,9 +1,9 @@
 # Site settings
-title: System-on-Chip Design & Verification
+title: System-on-Chip Design & Verification FPGA Project
 author:
-  name: Michelle Lynch
-  email: your-email@domain.com
-description: "A blog."
+  name: Tremain Mannion
+  email: G00367973@atu.ie
+description: "A blog to demonstrate & record my FPGA Project"
 
 # Build settings
 remote_theme: jekyll/minima
