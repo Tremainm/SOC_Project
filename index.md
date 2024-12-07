@@ -5,7 +5,7 @@ tags: fpga vga verilog
 categories: demo
 ---
 
-Add a short welcome message or introduction here. Aim to get the viewer interested in what follows! Guideline: 1 or 2 sentences.
+My name is Tremain and this is my FPGA VGA Driver Project. The aim of this project was to use to the VGA connector of the Basyss 3 board to create a custom image on a monitor. Through this process, I developed my understanding of the vivado tool and my understanding of the verilog code.  
 
 ## **Template VGA Design**
 ### **Project Set-Up**
