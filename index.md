@@ -10,6 +10,7 @@ My name is Tremain and this is my FPGA VGA Driver Project. The aim of this proje
 ## **Template VGA Design**
 ### **Project Set-Up**
 Summarise the project set-up and design flow. Include a screenshot of your own set-up, for example see the image of my Project Summary window below. Guideline 1 short paragraph.
+
 I began my project by getting a template from Michelle which had code to print stripes to the screen and another template that had code to cycle through different colours. From running synthesis, imlpementation and generating a bitstream for both templates, I began understanding how the code worked. I used a combination of both templates to create my own custom cycle that would cycle through different custom images. 
 
 <img src="https://raw.githubusercontent.com/Tremainm/SOC_Project/main/docs/assets/images/VGAPrjSum.png">
