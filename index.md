@@ -18,10 +18,14 @@ Outline the structure and design of the Verilog code templates you were given. W
 A VGA interface works by generating analog signals for red, green and blue colour channels. Each channel is 4 bits so the overall colour system will be 12 bit. Horizontal and vertical synchronization signals are generated to drive a VGA-compatible display. We use a monitor in the lab as our display.
 
 We were given two Verilog code templates by Michelle, VGAColourCycle and VGAColourStripes. VGAColourStripes created a static image that broke the 640 x 480 display area into 8 columns that displayed different colours. At the beginning of the code, we set the parameters and the inputs and outputs needed along with the registers used to store the RGB colours. The parameters set the counter width for timings and we define the counter range and the value that the counter should reset at.
+
 <img src="https://raw.githubusercontent.com/Tremainm/SOC_Project/main/docs/assets/images/ParametersStripesOrig.png">
 
 Within the template, we used 'if' and 'else if' statements to check that the column width was within certain parameters before we set the colour of each column.
+
 <img src="https://raw.githubusercontent.com/Tremainm/SOC_Project/main/docs/assets/images/ColourStripesOrig.png">
+
+We assign our output colours to internal registers. This is to separate internal logic from external sources. We use 'assign' to make sure changes in the registers are reflected on the output ports. This structure allows us to manipulate internal registers without affecting the outputs. 
 
 ### **Simulation**
 Explain the simulation process. Reference any important details, include a well-selected screenshot of the simulation. Guideline: 1/2 short paragraphs.
