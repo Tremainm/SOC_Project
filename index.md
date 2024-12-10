@@ -36,6 +36,18 @@ We assign our output colours to internal registers. This is to separate internal
 
 ### *VGAColourCycle*
 
+VGAColourCycle used a state machine to increment through eight different colour states every time a counter reaches the 'COUNT_TO' parameter. The outputs are the same as VGAColourStripes but we only have inputs for the clock and reset as we are not splitting up the screen so we do not need to use 'if' statements to check for row or col conditions. We define our state names and registers for current state and next state, colour and count. 
+
+<img src="https://raw.githubusercontent.com/Tremainm/SOC_Project/main/docs/assets/images/CycleParam.png">
+
+The state machine determines the colour and logic. We begin by setting our default colour and setting the next state to the current state. We set the colour within the first state and then check if count has reached 'COUNT_TO'. If the condition is correct, we set the next state to the name of the next state we want to enter. 
+
+<img src="https://raw.githubusercontent.com/Tremainm/SOC_Project/main/docs/assets/images/CycleLogic.png">
+
+We have two blocks for implementing the state machine and for the counter. The state register block allows us to reset to the default condition if the reset switch is high. If the reset is low, the state will update on the rising edge of the clock. The counter block resets the count to 'COUNT_FROM' if the reset switch is high. If the reset switch is low, it will reset the counter to 0 if it reaches 'COUNT_TO'. Otherwise, it will increment the counter by 1 unless it has reached 'COUNT_TO'.
+
+<img src="https://raw.githubusercontent.com/Tremainm/SOC_Project/main/docs/assets/images/CycleRegState&Counter.png">
+
 ### **Simulation**
 Explain the simulation process. Reference any important details, include a well-selected screenshot of the simulation. Guideline: 1/2 short paragraphs.
 ### **Synthesis**
