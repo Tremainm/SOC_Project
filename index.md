@@ -8,14 +8,14 @@ categories: demo
 My name is Tremain and this is my FPGA VGA Driver Project. The aim of this project was to use to the VGA connector of the Basys 3 board to create a custom image on a monitor. Through this process, I developed my understanding of the vivado tool and my understanding of the verilog code.  
 
 ## **Template VGA Design**
-### **Project Set-Up**
-Summarise the project set-up and design flow. Include a screenshot of your own set-up, for example see the image of my Project Summary window below. Guideline 1 short paragraph.
-
+### **Project Set-Up*
 I began the project by creating a new Vivado project and defined the target FPGA board. We were given a constraints file that had clock configurations and pin assignments for the reset switch on the board. The design flow began by writing the verilog code, synthesizing it to check for any syntax or logic errors, running implementaion, and generating a bitstream to programme the FPGA board. Below is a screenshot of the project summary window.
 
 <img src="https://raw.githubusercontent.com/Tremainm/SOC_Project/main/docs/assets/images/ProjectSummary.png">
 ### **Template Code**
 Outline the structure and design of the Verilog code templates you were given. What do they do? Include reference to how a VGA interface works. Guideline: 2/3 short paragraphs, consider including screenshot(s).
+
+We were given two Verilog code templates by Michelle, VGAColourCycle and VGAColourStripes. VGAColourStripes created a static image that broke the 640 x 480 display area into 8 columns that displayed different colours. Within the template, we used 'if' and 'else if' statements to check that the column width was within certain parameters before we set the colour of each column.
 ### **Simulation**
 Explain the simulation process. Reference any important details, include a well-selected screenshot of the simulation. Guideline: 1/2 short paragraphs.
 ### **Synthesis**
