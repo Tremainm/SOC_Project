@@ -13,7 +13,7 @@ Summarise the project set-up and design flow. Include a screenshot of your own s
 
 I began the project by creating a new Vivado project and defined the target FPGA board. We were given a constraints file that had clock configurations and pin assignments for the reset switch on the board. The design flow began by writing the verilog code, synthesizing it to check for any syntax or logic errors, running implementaion, and generating a bitstream to programme the FPGA board. Below is a screenshot of the project summary window.
 
-<img src="https://raw.githubusercontent.com/Tremainm/SOC_Project/main/docs/assets/images/VGAPrjSum.png">
+<img src="https://raw.githubusercontent.com/Tremainm/SOC_Project/main/docs/assets/images/ProjectSummary.png">
 ### **Template Code**
 Outline the structure and design of the Verilog code templates you were given. What do they do? Include reference to how a VGA interface works. Guideline: 2/3 short paragraphs, consider including screenshot(s).
 ### **Simulation**
