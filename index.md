@@ -25,7 +25,9 @@ Within the template, we used 'if' and 'else if' statements to check that the col
 
 <img src="https://raw.githubusercontent.com/Tremainm/SOC_Project/main/docs/assets/images/ColourStripesOrig.png">
 
-We assign our output colours to internal registers. This is to separate internal logic from external sources. We use 'assign' to make sure changes in the registers are reflected on the output ports. This structure allows us to manipulate internal registers without affecting the outputs. 
+We assign our output colours to internal registers. This is to separate internal logic from external sources. We use 'assign' to make sure changes in the registers are reflected on the output ports. This structure allows us to manipulate internal registers without affecting the outputs.
+
+<img src="https://raw.githubusercontent.com/Tremainm/SOC_Project/main/docs/assets/images/AssignReg.png">
 
 ### **Simulation**
 Explain the simulation process. Reference any important details, include a well-selected screenshot of the simulation. Guideline: 1/2 short paragraphs.
