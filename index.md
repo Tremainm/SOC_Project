@@ -15,8 +15,13 @@ I began the project by creating a new Vivado project and defined the target FPGA
 ### **Template Code**
 Outline the structure and design of the Verilog code templates you were given. What do they do? Include reference to how a VGA interface works. Guideline: 2/3 short paragraphs, consider including screenshot(s).
 
-We were given two Verilog code templates by Michelle, VGAColourCycle and VGAColourStripes. VGAColourStripes created a static image that broke the 640 x 480 display area into 8 columns that displayed different colours. Within the template, we used 'if' and 'else if' statements to check that the column width was within certain parameters before we set the colour of each column.
+A VGA interface works by generating analog signals for red, green and blue colour channels. Each channel is 4 bits so the overall colour system will be 12 bit. Horizontal and vertical synchronization signals are generated to drive a VGA-compatible display. We use a monitor in the lab as our display.
+
+We were given two Verilog code templates by Michelle, VGAColourCycle and VGAColourStripes. VGAColourStripes created a static image that broke the 640 x 480 display area into 8 columns that displayed different colours. At the beginning of the code, we set the parameters and the inputs and outputs needed along with the registers used to store the RGB colours. The parameters set the counter width for timings and we define the counter range and the value that the counter should reset at.  
+
+Within the template, we used 'if' and 'else if' statements to check that the column width was within certain parameters before we set the colour of each column.
 <img src="https://raw.githubusercontent.com/Tremainm/SOC_Project/main/docs/assets/images/ColourStripesOrig.png">
+
 ### **Simulation**
 Explain the simulation process. Reference any important details, include a well-selected screenshot of the simulation. Guideline: 1/2 short paragraphs.
 ### **Synthesis**
