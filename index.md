@@ -78,6 +78,22 @@ Below, we can see the signal generation from our testbench. We can see the clock
 
 ### **Synthesis**
 Describe the synthesis & implementation outputs for your design, are there any differences to that of the original design? Guideline 1-2 short paragraphs.
+
+Once we synthesize, an elaborate design is created. This shows us a top down view of our different modules and multiplexers (Muxes). 
+
+<img src="https://raw.githubusercontent.com/Tremainm/SOC_Project/main/docs/assets/images/ElaborateDesign.png">
+
+If we select the ColourStripes module, we can see different comparators, AND gates, registers and multiplexers. The comparators act as logic blocks for comparing inputs and generating a true (1) or false (0) output. The 'RTL_GE' comparator checks if I0 is greater than or equal to V and outputs a 1 if this is true. This is the defined range for checking the row and column 'if' statements. The 'RTL_LT' checks if I0 is less than V. The 'RTL_AND' is a normal AND gate anf outputs a 1 if all inputs are 1.
+
+<img src="https://raw.githubusercontent.com/Tremainm/SOC_Project/main/docs/assets/images/ProjectSnipComparators&AND.png">
+
+The muxes are used to select an input signal based on the select signal. This allows for different ROM signals based on the select signal. The 'RTL_ROM' is Read-Only Memory and it stores look-up tables (LUTs). The input determines the stored values address. The output data is sent to the mux. The 'RTL_REG_ASYNC' is an asynchronous register that stores data that can be reset asynchronously using the clr signal. It acts as a final storage space for 'blue_reg' or 'green_reg' or 'red_reg'. This ensures the output is synchronized with the clock. 
+
+<img src="https://raw.githubusercontent.com/Tremainm/SOC_Project/main/docs/assets/images/ProjectSnipReg&Mux.png">
+
+### **Implementation**
+
+
 ### **Demonstration**
 If you get your own design working on the Basys3 board, take a picture! Guideline: 1-2 sentences.
 
