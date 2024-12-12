@@ -59,16 +59,23 @@ Below is the original pixel image I created. I elaborated on this to create mult
 <img src="https://raw.githubusercontent.com/Tremainm/SOC_Project/main/docs/assets/images/ProjectSnip.png">
 
 ### **Code Adaptation**
-Briefly show how you changed the template code to display a different image. Demonstrate your understanding. Guideline: 1-2 short paragraphs.
-
 I used a combination of the 2 templates I received from Michelle for my project. I used the state machine from the VGAColourCycle template to implement the counter and switching between states. I used the column and row separation from the VGAColourStripes template to split my display into boxes. I divided my 640 x 480 display 10. This gave me 64 horizontal boxes and 48 vertical boxes. 
 
 <img src="https://raw.githubusercontent.com/Tremainm/SOC_Project/main/docs/assets/images/MainCode.png">
 
-I used 'if' statements to check if the rows and columns were correct before changing the colour of the individual boxes to create my image. 
+I used 'if' statements to check if the rows and columns were correct before changing the colour of the individual boxes to create my image. At the beginning of each state, I set the entire display black. This avoids any issues with colours being overwritten. The counter and register state is identical to the VGAColourCycle template. 
 
 ### **Simulation**
 Show how you simulated your own design. Are there any things to note? Demonstrate your understanding. Add a screenshot. Guideline: 1-2 short paragraphs.
+
+I used the testbench to simulate the design. This is helpful for detecting any timing or synchronization issues. It also allows us to visualise the signal beahviour and detect any logic errors before deploying to hardware. In the testbench, we reduce the size of our parameters to allow for quicker testing. 
+
+<img src="https://raw.githubusercontent.com/Tremainm/SOC_Project/main/docs/assets/images/TestBenchParam.png">
+
+Below, we can see the signal generation from our testbench. We can see the clock frequency and we can see that is synchronous as the other signals change on the rising edge of the clock. The row and col signals are numbered in decimal so it is easier to understand how they work. We can see that the programme begins at row[0] and col[0]. It then implements through each column in row[0]. Once that has been completed, it moves on to row[1], col[0] and implements through each column in row[1]. It does this for each row.  
+
+<img src="https://raw.githubusercontent.com/Tremainm/SOC_Project/main/docs/assets/images/Simulation.png">
+
 ### **Synthesis**
 Describe the synthesis & implementation outputs for your design, are there any differences to that of the original design? Guideline 1-2 short paragraphs.
 ### **Demonstration**
