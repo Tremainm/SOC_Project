@@ -49,16 +49,24 @@ We have two blocks for implementing the state machine and for the counter. The s
 <img src="https://raw.githubusercontent.com/Tremainm/SOC_Project/main/docs/assets/images/CycleRegState&Counter.png">
 
 ## **My VGA Design Edit**
-Introduce your own design idea. Consider how complex/achievabble this might be or otherwise. Reference any research you do online (use hyperlinks).
-
 For my VGA Design, I wanted to break the display up into smaller pixels so I could create a custom image. I also wanted to make use of the counter from the VGAColourCycle template to iterate through different images. My aim was to customise the templates that Michelle gave me so I could better understand the verilog code and how it worked. This allowed me to avoid using chatGPT also. I found that others were having issues with the code that chatGPT was recommending them to use so I decided not to waste time with that. 
 
 Once I had split up my display into smaller pixels, I used an online pixel art creator to create my image. This also let me map out the rows and columns I would use depending on where they were in the pixel art image.
 https://www.pixilart.com/draw
 
+Below is the original pixel image I created. I elaborated on this to create multiple images that displayed in different states.
+
+<img src="https://raw.githubusercontent.com/Tremainm/SOC_Project/main/docs/assets/images/ProjectSnip.png">
 
 ### **Code Adaptation**
 Briefly show how you changed the template code to display a different image. Demonstrate your understanding. Guideline: 1-2 short paragraphs.
+
+I used a combination of the 2 templates I received from Michelle for my project. I used the state machine from the VGAColourCycle template to implement the counter and switching between states. I used the column and row separation from the VGAColourStripes template to split my display into boxes. I divided my 640 x 480 display 10. This gave me 64 horizontal boxes and 48 vertical boxes. 
+
+<img src="https://raw.githubusercontent.com/Tremainm/SOC_Project/main/docs/assets/images/MainCode.png">
+
+I used 'if' statements to check if the rows and columns were correct before changing the colour of the individual boxes to create my image. 
+
 ### **Simulation**
 Show how you simulated your own design. Are there any things to note? Demonstrate your understanding. Add a screenshot. Guideline: 1-2 short paragraphs.
 ### **Synthesis**
