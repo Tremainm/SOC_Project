@@ -77,8 +77,6 @@ Below, we can see the signal generation from our testbench. We can see the clock
 <img src="https://raw.githubusercontent.com/Tremainm/SOC_Project/main/docs/assets/images/Simulation.png">
 
 ### **Synthesis**
-Describe the synthesis & implementation outputs for your design, are there any differences to that of the original design? Guideline 1-2 short paragraphs.
-
 Once we synthesize, an elaborate design is created. This shows us a top down view of our different modules and multiplexers (Muxes). 
 
 <img src="https://raw.githubusercontent.com/Tremainm/SOC_Project/main/docs/assets/images/ElaborateDesign.png">
@@ -92,7 +90,9 @@ The muxes are used to select an input signal based on the select signal. This al
 <img src="https://raw.githubusercontent.com/Tremainm/SOC_Project/main/docs/assets/images/ProjectSnipReg&Mux.png">
 
 ### **Implementation**
+In the implementatin design, we can see the hardware placement on the board that is being used for our project. If we zoom in on this, we can see different routes for Hsync, Vsync, Blue_reg etc. 
 
+<img src="https://raw.githubusercontent.com/Tremainm/SOC_Project/main/docs/assets/images/ImplementationDesignBoardPlacement.png">
 
 ### **Demonstration**
 If you get your own design working on the Basys3 board, take a picture! Guideline: 1-2 sentences.
