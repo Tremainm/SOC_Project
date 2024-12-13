@@ -66,8 +66,6 @@ I used a combination of the 2 templates I received from Michelle for my project.
 I used 'if' statements to check if the rows and columns were correct before changing the colour of the individual boxes to create my image. At the beginning of each state, I set the entire display black. This avoids any issues with colours being overwritten. The counter and register state is identical to the VGAColourCycle template. 
 
 ### **Simulation**
-Show how you simulated your own design. Are there any things to note? Demonstrate your understanding. Add a screenshot. Guideline: 1-2 short paragraphs.
-
 I used the testbench to simulate the design. This is helpful for detecting any timing or synchronization issues. It also allows us to visualise the signal beahviour and detect any logic errors before deploying to hardware. In the testbench, we reduce the size of our parameters to allow for quicker testing. 
 
 <img src="https://raw.githubusercontent.com/Tremainm/SOC_Project/main/docs/assets/images/TestBenchParam.png">
@@ -90,19 +88,21 @@ The muxes are used to select an input signal based on the select signal. This al
 <img src="https://raw.githubusercontent.com/Tremainm/SOC_Project/main/docs/assets/images/ProjectSnipReg&Mux.png">
 
 ### **Implementation**
-In the implementatin design, we can see the hardware placement on the board that is being used for our project. If we zoom in on this, we can see different routes for Hsync, Vsync, Blue_reg etc. 
+In the implementatin design, we can see the hardware placement on the board that is being used for our project. The blue boxes in the bottom left of the board is the hardware that is being used on the board. If we zoom in on this, we can see different routes for Hsync, Vsync, Blue_reg etc. 
 
 <img src="https://raw.githubusercontent.com/Tremainm/SOC_Project/main/docs/assets/images/ImplentationDesignBoardPlacement.png">
+
+The below image shows the 'hsync_reg' flip-flop within a slice. It represents the physical location of the flip-flop after synthesis, placement and routing. 
+
+<img src="https://raw.githubusercontent.com/Tremainm/SOC_Project/main/docs/assets/images/ImplentationDesignHsync&Flip&Latch.png">
+
+In verilog, we can see a breakdown of the resources used. We can see the overall amount of look-up tables used, slices used and registers used. It gives us a breakdown of what modules used these resources. 
+
+<img src="https://raw.githubusercontent.com/Tremainm/SOC_Project/main/docs/assets/images/ImplentationDesignSlices-LUT-etc.png">
 
 ### **Demonstration**
 If you get your own design working on the Basys3 board, take a picture! Guideline: 1-2 sentences.
 
-## **More Markdown Basics**
-This is a paragraph. Add an empty line to start a new paragraph.
-
-Font can be emphasised as *Italic* or **Bold**.
-
-Code can be highlighted by using `backticks`.
 
 Hyperlinks look like this: [GitHub Help](https://help.github.com/).
 
