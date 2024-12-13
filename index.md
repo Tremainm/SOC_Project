@@ -101,16 +101,8 @@ In verilog, we can see a breakdown of the resources used. We can see the overall
 <img src="https://raw.githubusercontent.com/Tremainm/SOC_Project/main/docs/assets/images/ImplentationDesignSlices-LUT-etc.png">
 
 ### **Demonstration**
-If you get your own design working on the Basys3 board, take a picture! Guideline: 1-2 sentences.
+Below are images of my final design. It is three images that are in different states that use a state machine to iterate through them. 
 
-
-Hyperlinks look like this: [GitHub Help](https://help.github.com/).
-
-A bullet list can be rendered as follows:
-- vectors
-- algorithms
-- iterators
-
-Images can be added by uploading them to the repository in a /docs/assets/images folder, and then rendering using HTML via githubusercontent.com as shown in the example below.
-
-<img src="https://raw.githubusercontent.com/melgineer/fpga-vga-verilog/main/docs/assets/images/VGAPrjSrcs.png">
+<img src="https://raw.githubusercontent.com/Tremainm/SOC_Project/main/docs/assets/images/Img1.png">
+<img src="https://raw.githubusercontent.com/Tremainm/SOC_Project/main/docs/assets/images/Img2.png">
+<img src="https://raw.githubusercontent.com/Tremainm/SOC_Project/main/docs/assets/images/Img3.png">
