@@ -94,7 +94,7 @@ In the implementatin design, we can see the hardware placement on the board that
 
 The below image shows the 'hsync_reg' flip-flop within a slice. It represents the physical location of the flip-flop after synthesis, placement and routing. 
 
-<img src="https://raw.githubusercontent.com/Tremainm/SOC_Project/main/docs/assets/images/ImplentationDesignHsync&Flip&Latch.png">
+<img src="https://raw.githubusercontent.com/Tremainm/SOC_Project/main/docs/assets/images/ImplentationDesignHsyncFlip&Latch.png">
 
 In verilog, we can see a breakdown of the resources used. We can see the overall amount of look-up tables used, slices used and registers used. It gives us a breakdown of what modules used these resources. 
 
