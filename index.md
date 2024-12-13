@@ -92,7 +92,7 @@ The muxes are used to select an input signal based on the select signal. This al
 ### **Implementation**
 In the implementatin design, we can see the hardware placement on the board that is being used for our project. If we zoom in on this, we can see different routes for Hsync, Vsync, Blue_reg etc. 
 
-<img src="https://raw.githubusercontent.com/Tremainm/SOC_Project/main/docs/assets/images/ImplementationDesignBoardPlacement.png">
+<img src="https://raw.githubusercontent.com/Tremainm/SOC_Project/main/docs/assets/images/ImplentationDesignBoardPlacement.png">
 
 ### **Demonstration**
 If you get your own design working on the Basys3 board, take a picture! Guideline: 1-2 sentences.
