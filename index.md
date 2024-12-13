@@ -52,7 +52,7 @@ We have two blocks for implementing the state machine and for the counter. The s
 For my VGA Design, I wanted to break the display up into smaller pixels so I could create a custom image. I also wanted to make use of the counter from the VGAColourCycle template to iterate through different images. My aim was to customise the templates that Michelle gave me so I could better understand the verilog code and how it worked. This allowed me to avoid using chatGPT also. I found that others were having issues with the code that chatGPT was recommending them to use so I decided not to waste time with that. 
 
 Once I had split up my display into smaller pixels, I used an online pixel art creator to create my image. This also let me map out the rows and columns I would use depending on where they were in the pixel art image.
-https://www.pixilart.com/draw
+[Pixel Art](https://www.pixilart.com/draw)
 
 Below is the original pixel image I created. I elaborated on this to create multiple images that displayed in different states.
 
